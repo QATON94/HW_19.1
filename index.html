@@ -37,9 +37,8 @@
         main {
             display: flex;
             flex-wrap: nowrap;
-            height: 100vh;
-            height: -webkit-fill-available;
-            max-height: 100vh;
+
+
             overflow-x: auto;
             overflow-y: hidden;
         }
@@ -281,14 +280,117 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
 
+
+                <div class="col-8">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" id="exampleInputtext" class="form-control" placeholder="Имя">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="exampleInputEmail1" class="form-control" placeholder="Email">
+                        </div>
+
+                        <button type="Отправить" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <h3 class="display-4 fw-normal top-100px">
+                    FAQ
+                </h3>
+
+                <p class="d-inline-center">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button"
+                       aria-expanded="true"
+                       aria-controls="collapseExample">
+                        Как купить?
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button"
+                       aria-expanded="false"
+                       aria-controls="collapseExample">
+                        Как доставить?
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse3" role="button"
+                       aria-expanded="false"
+                       aria-controls="collapseExample">
+                        Какая гарантия?
+                    </a>
+                </p>
+
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                        Как купить?
+                    </div>
+                </div>
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                        Как доставить?
+                    </div>
+                </div>
+                <div class="collapse" id="collapse3">
+                    <div class="card card-body">
+                        Какая гарантия?
+                    </div>
+                </div>
+            </div>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">номер</th>
+                    <th scope="col">название товара</th>
+                    <th scope="col">цена за штуку</th>
+                    <th scope="col">количество</th>
+                    <th scope="col">итоговая сумма</th>
+                    <th scope="col">статус заказа</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Телефон</td>
+                    <td>20 000</td>
+                    <td>100</td>
+                    <td>2 000 000</td>
+                    <td>
+                        <span class="badge bg-primary">Новый</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Ноутбук</td>
+                    <td>150 000</td>
+                    <td>10</td>
+                    <td>1 500 000</td>
+                    <td><span class="badge bg-warning">Обработка</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Клавиатура</td>
+                    <td>2 000</td>
+                    <td>20</td>
+                    <td>40 000</td>
+                    <td><span class="badge bg-success">Обработан</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>ИБП</td>
+                    <td>40 000</td>
+                    <td>10</td>
+                    <td>400 000</td>
+                    <td><span class="badge bg-danger">Отмена</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
     </div>
+
 
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
